@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "somethingsaddons",
+  "version": "${version}",
+  "name": "SomethingsAddons",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/somethingsaddons/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "vao211.somethingsaddons.client.SomethingsaddonsDataGenerator"
+    ],
+    "client": [
+      "vao211.somethingsaddons.client.SomethingsaddonsClient"
+    ],
+    "main": [
+      "vao211.somethingsaddons.Somethingsaddons"
+    ]
+  },
+  "mixins": [
+    "somethingsaddons.mixins.json",
+    {
+      "config": "somethingsaddons.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

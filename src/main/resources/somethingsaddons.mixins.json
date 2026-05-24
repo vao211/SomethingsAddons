@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "vao211.somethingsaddons.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "LivingEntityMixin",
+    "MoonknightMixin",
+    "WorldMixin",
+    "WitherEntityMixin",
+    "WitherSkullEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
