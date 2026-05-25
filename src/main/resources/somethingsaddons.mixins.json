@@ -8,7 +8,8 @@
     "MoonknightMixin",
     "WorldMixin",
     "WitherEntityMixin",
-    "WitherSkullEntityMixin"
+    "WitherSkullEntityMixin",
+    "ItemEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

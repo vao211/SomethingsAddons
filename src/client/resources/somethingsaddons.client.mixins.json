@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "vao211.somethingsaddons.mixin.client",
+  "package": "vao211.somethingsaddons.client.mixin.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "InventoryScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

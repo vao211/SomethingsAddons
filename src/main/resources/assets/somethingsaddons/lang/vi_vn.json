@@ -1,4 +1,7 @@
 ﻿{
+  "somethingsaddons.gui.pickup_lock.on": "🔒",
+  "somethingsaddons.gui.pickup_lock.off": "🔓",
+
   "somethingsaddons.midnightconfig.title": "Cấu Hình Somethings Addons",
 
   "somethingsaddons.midnightconfig.category.protection": "Bảo Vệ & Tiện Ích",
