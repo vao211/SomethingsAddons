@@ -4,6 +4,10 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import java.util.List;
 
 public class SomethingsAddonsConfig extends MidnightConfig {
+    // --- PROTECT CREATIVE PLAYER ---
+    @Entry
+    public static boolean protectCreativePlayer = true;
+
     // --- DAMAGE GATING ---
     @Entry
     public static boolean applyDmgGating = true;

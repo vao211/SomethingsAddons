@@ -1,9 +1,9 @@
 package vao211.somethingsaddons.mixin;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
 import vao211.somethingsaddons.config.SomethingsAddonsConfig;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -21,6 +21,29 @@ public abstract class LivingEntityMixin {
 
     @Unique private int somethingsaddons_lastHealWindowTick = 0;
     @Unique private float somethingsaddons_healTakenThisWindow = 0f;
+    @Unique private boolean somethingsaddons_bypassGating = false;
+
+    @Inject(method = "damage", at = @At("RETURN"))
+    private void somethingsaddons$resetBypassFlag(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+        this.somethingsaddons_bypassGating = false;
+    }
+
+    @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
+    private void somethingsaddons$catchKillCommand(DamageSource source,
+                                                   float amount,
+                                                   CallbackInfoReturnable<Boolean> cir) {
+        if (source.isIn(DamageTypeTags.BYPASSES_INVULNERABILITY) || amount > 1000000.0f) {
+
+            LivingEntity entity = (LivingEntity) (Object) this;
+
+            if (SomethingsAddonsConfig.protectCreativePlayer && entity instanceof PlayerEntity player && player.isCreative()) {
+                cir.setReturnValue(false);
+                return;
+            }
+
+            this.somethingsaddons_bypassGating = true;
+        }
+    }
 
     @ModifyVariable(method = "setHealth", at = @At("HEAD"), argsOnly = true)
     private float somethingsaddons$gateHealth(float newHealth) {
@@ -28,8 +51,10 @@ public abstract class LivingEntityMixin {
 
         float currentHealth = entity.getHealth();
 
-        //Bypass for /kill
-        if (currentHealth - newHealth > 1000000.0f) return newHealth;
+        //Bypass for /kill command
+        if (this.somethingsaddons_bypassGating) {
+            return newHealth;
+        }
 
         if (newHealth == currentHealth) return newHealth;
 
