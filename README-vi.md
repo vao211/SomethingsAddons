@@ -9,6 +9,8 @@ Một bản mod dành cho Minecraft Fabric nhằm bổ sung các cải tiến v�
 * **Wither DangerBoss:** Thêm chế độ DangerBoss đặc biệt dành cho Wither (có thể tùy chỉnh trong config).
 * **Bảo vệ Khối:** Thêm tính năng bảo vệ block khỏi bị phá hủy (có thể tùy chỉnh trong config).
 * **Sửa lỗi & Tương thích:** Fix lỗi liên quan đến boss từ các mod khác và khắc phục một vài bug phá Bedrock.
+* **Tắt/Bật Looting:** Ẩn/Nhấp nút Looting trong Giao diện Inventory
+
 
 ## Yêu cầu hệ thống
 Để sử dụng bản mod này, bạn cần cài đặt:

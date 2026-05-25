@@ -9,6 +9,7 @@ A Minecraft Fabric mod adding various enhancements and utilities to your game.
 * **Wither DangerBoss Mode:** Introduces a special DangerBoss mode for the Wither (fully configurable).
 * **Block Protection:** Adds a feature to protect blocks from being destroyed (fully configurable).
 * **Bug Fixes & Compatibility:** Fixes issues with bosses from other mods and patches various bedrock-breaking bugs.
+* **On/Off Looting:** Unlock/Lock Button Looting in inventory GUI
 
 ## Requirements
 To play with this mod, you need the following installed:
