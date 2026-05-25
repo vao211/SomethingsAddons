@@ -6,8 +6,7 @@
   "description": "A fabric mod that adds some configs to your game",
   "authors": ["vao211"],
   "contact": {
-    "modrinth": "https://modrinth.com/mod/somethingsaddons",
-    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/somethingsaddons",
+    "homepage": "https://modrinth.com/mod/somethingsaddons",
     "sources": "https://github.com/vao211/SomethingsAddons.git",
     "issues": "https://github.com/vao211/SomethingsAddons/issues"
   },
