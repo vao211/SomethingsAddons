@@ -3,10 +3,15 @@
   "id": "somethingsaddons",
   "version": "${version}",
   "name": "SomethingsAddons",
-  "description": "",
-  "authors": [],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "description": "A fabric mod that adds some configs to your game",
+  "authors": ["vao211"],
+  "contact": {
+    "modrinth": "https://modrinth.com/mod/somethingsaddons",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/somethingsaddons",
+    "sources": "https://github.com/vao211/SomethingsAddons.git",
+    "issues": "https://github.com/vao211/SomethingsAddons/issues"
+  },
+  "license": "CC-BY-NC-4.0",
   "icon": "assets/somethingsaddons/icon.png",
   "environment": "*",
   "entrypoints": {

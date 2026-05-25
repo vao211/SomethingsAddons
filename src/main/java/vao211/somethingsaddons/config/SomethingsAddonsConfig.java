@@ -38,17 +38,18 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     public static List<String> protectedBlocks = List.of();
     //"minecraft:chest"
 
+
     // --- DANGER BOSS: WITHER ---
     @Entry public static boolean enableDangerBoss = true;
     @Entry public static boolean witherNoBlockDrops = true;
     // Phase 1
-    @Entry(min = 1.0) public static double witherBaseHealth = 1500.0D;
-    @Entry(min = 0.0) public static double witherBaseArmor = 20.0D;
-    @Entry(min = 0.0) public static double witherBaseDamage = 16.0D;
+    @Entry(min = 1.0) public static double witherBaseHealth = 300.0D;
+    @Entry(min = 0.0) public static double witherBaseArmor = 10.0D;
+    @Entry(min = 0.0) public static double witherBaseDamage = 10.0D;
     // Phase 2
-    @Entry(min = 1.0) public static double witherPhase2Threshold = 500.0D;
-    @Entry(min = 0.0) public static double witherPhase2Armor = 24.0D;
-    @Entry(min = 0.0) public static double witherPhase2Damage = 20.0D;
+    @Entry(min = 1.0) public static double witherPhase2Threshold = 150.0D;
+    @Entry(min = 0.0) public static double witherPhase2Armor = 16.0D;
+    @Entry(min = 0.0) public static double witherPhase2Damage = 14.0D;
     @Entry(min = 0.0, max = 1.0) public static double witherArmorPiercing = 0.3D;
 
     // --- WITHER SKULL BUFF ---
