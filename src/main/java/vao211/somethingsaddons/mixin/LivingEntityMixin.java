@@ -137,7 +137,10 @@ public abstract class LivingEntityMixin {
                 float piercing = (float) SomethingsAddonsConfig.witherArmorPiercing;
                 float effectiveArmor = currentArmor - (currentArmor * piercing);
                 if (effectiveArmor<0) effectiveArmor = 0;
-                float finalDamage = (amount / (1.0f + effectiveArmor)) * 4.0f;
+
+                float minimumTrueDamage = amount * piercing * 3.0f;
+                float finalDamage = (amount / (1.0f + effectiveArmor)) * 5.0f;
+                finalDamage = Math.max(finalDamage, minimumTrueDamage);
 
                 cir.setReturnValue(finalDamage);
             }
