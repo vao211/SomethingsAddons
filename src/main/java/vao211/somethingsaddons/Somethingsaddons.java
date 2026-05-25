@@ -1,5 +1,6 @@
 package vao211.somethingsaddons;
 
+import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class Somethingsaddons implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     @Override
     public void onInitialize() {
+        MidnightConfig.init(MOD_ID, SomethingsAddonsConfig.class);
         Path configDir = FabricLoader.getInstance().getConfigDir().resolve("SomethingsAddons");
         try {
             if (!Files.exists(configDir)) {

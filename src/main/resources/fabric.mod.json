@@ -23,6 +23,9 @@
     ],
     "main": [
       "vao211.somethingsaddons.Somethingsaddons"
+    ],
+    "modmenu": [
+      "vao211.somethingsaddons.client.config.ModMenuIntegration"
     ]
   },
   "mixins": [

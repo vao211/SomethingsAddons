@@ -1,0 +1,77 @@
+﻿{
+  "somethingsaddons.midnightconfig.title": "Somethings Addons Config",
+
+  "somethingsaddons.midnightconfig.category.protection": "Protection & Utilities",
+  "somethingsaddons.midnightconfig.category.gating": "Combat Mechanics",
+  "somethingsaddons.midnightconfig.category.wither": "Danger Boss: Wither",
+
+  "somethingsaddons.midnightconfig.protectCreativePlayer": "Protect Creative Players",
+
+  "somethingsaddons.midnightconfig.title": "Somethings Addons Config",
+
+  "somethingsaddons.midnightconfig.protectCreativePlayer": "Protect Creative Players",
+  "somethingsaddons.midnightconfig.protectCreativePlayer.tooltip": "Prevents players in Creative mode from being instantly killed by the /kill command gating bypass.",
+
+  "somethingsaddons.midnightconfig.applyDmgGating": "Enable Damage Gating",
+  "somethingsaddons.midnightconfig.applyDmgGating.tooltip": "Limits the maximum amount of damage an entity can take from a single hit.",
+
+  "somethingsaddons.midnightconfig.hpToApplyDmgGating": "Min HP for Damage Gating",
+  "somethingsaddons.midnightconfig.hpToApplyDmgGating.tooltip": "Entities must have this much Max HP or more for Damage Gating to apply.",
+
+  "somethingsaddons.midnightconfig.maxDamagePercentPerHit": "Max Damage % Per Hit",
+  "somethingsaddons.midnightconfig.maxDamagePercentPerHit.tooltip": "Maximum percentage of Max HP that can be lost in a single hit (0.1 = 10%).",
+
+  "somethingsaddons.midnightconfig.applyHealGating": "Enable Heal Gating",
+  "somethingsaddons.midnightconfig.applyHealGating.tooltip": "Limits how fast entities can heal per second.",
+
+  "somethingsaddons.midnightconfig.maxHealPercentPerSecond": "Max Heal % Per Second",
+  "somethingsaddons.midnightconfig.maxHealPercentPerSecond.tooltip": "Maximum percentage of Max HP that can be healed per second (0.05 = 5%).",
+
+  "somethingsaddons.midnightconfig.applyBossKnockbackImmunity": "Boss Knockback Immunity",
+  "somethingsaddons.midnightconfig.applyBossKnockbackImmunity.tooltip": "Grants extreme knockback resistance to entities with high Max HP.",
+
+  "somethingsaddons.midnightconfig.hpToApplyKnockbackImmunity": "Min HP for Knockback Immunity",
+  "somethingsaddons.midnightconfig.hpToApplyKnockbackImmunity.tooltip": "Entities must have this much Max HP or more to be completely immune to knockback.",
+
+  "somethingsaddons.midnightconfig.globalBedrockProtection": "Global Bedrock Protection",
+  "somethingsaddons.midnightconfig.globalBedrockProtection.tooltip": "Prevents ANY modded boss or entity from breaking Bedrock or Wither-immune blocks.",
+
+  "somethingsaddons.midnightconfig.enableCustomBlockProtection": "Enable Custom Block Protection",
+  "somethingsaddons.midnightconfig.enableCustomBlockProtection.tooltip": "Enables the custom list of protected blocks below.",
+
+  "somethingsaddons.midnightconfig.protectedBlocks": "Protected Blocks List",
+  "somethingsaddons.midnightconfig.protectedBlocks.tooltip": "List of block IDs (e.g., minecraft:chest) that cannot be broken by bosses.",
+
+  "somethingsaddons.midnightconfig.enableDangerBoss": "Enable Danger Boss (Wither)",
+  "somethingsaddons.midnightconfig.enableDangerBoss.tooltip": "Enables the enhanced stats, armor piercing, and phase mechanics for the Wither.",
+
+  "somethingsaddons.midnightconfig.witherNoBlockDrops": "Disable Wither Block Drops",
+  "somethingsaddons.midnightconfig.witherNoBlockDrops.tooltip": "Prevents items from dropping when the Wither breaks blocks to significantly reduce lag.",
+
+  "somethingsaddons.midnightconfig.witherBaseHealth": "Wither Phase 1: Base Health",
+  "somethingsaddons.midnightconfig.witherBaseHealth.tooltip": "Maximum health of the Wither when spawned.",
+
+  "somethingsaddons.midnightconfig.witherBaseArmor": "Wither Phase 1: Base Armor",
+  "somethingsaddons.midnightconfig.witherBaseArmor.tooltip": "Armor points of the Wither during Phase 1.",
+
+  "somethingsaddons.midnightconfig.witherBaseDamage": "Wither Phase 1: Base Damage",
+  "somethingsaddons.midnightconfig.witherBaseDamage.tooltip": "Melee attack damage of the Wither during Phase 1.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Threshold": "Wither Phase 2: HP Threshold",
+  "somethingsaddons.midnightconfig.witherPhase2Threshold.tooltip": "The Wither enters Phase 2 when its health drops below this value.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Armor": "Wither Phase 2: Armor",
+  "somethingsaddons.midnightconfig.witherPhase2Armor.tooltip": "Armor points of the Wither during Phase 2.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Damage": "Wither Phase 2: Damage",
+  "somethingsaddons.midnightconfig.witherPhase2Damage.tooltip": "Melee attack damage of the Wither during Phase 2.",
+
+  "somethingsaddons.midnightconfig.witherArmorPiercing": "Wither Phase 2: Armor Piercing",
+  "somethingsaddons.midnightconfig.witherArmorPiercing.tooltip": "Percentage of the target's armor ignored by all Wither attacks during Phase 2 (0.3 = 30%).",
+
+  "somethingsaddons.midnightconfig.witherSkullDirectDamage": "Wither Skull: Direct Hit Damage",
+  "somethingsaddons.midnightconfig.witherSkullDirectDamage.tooltip": "Base damage dealt when a Wither Skull directly hits a target.",
+
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower": "Wither Skull: Explosion Power",
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Radius and damage scale of the Wither Skull explosion (Vanilla is 1.0)."
+}

@@ -1,0 +1,13 @@
+package vao211.somethingsaddons.client.config;
+
+import com.terraformersmc.modmenu.api.ConfigScreenFactory;
+import com.terraformersmc.modmenu.api.ModMenuApi;
+import eu.midnightdust.lib.config.MidnightConfig;
+import net.minecraft.client.gui.screen.Screen;
+
+public class ModMenuIntegration implements ModMenuApi {
+    @Override
+    public ConfigScreenFactory<?> getModConfigScreenFactory() {
+        return parent -> MidnightConfig.getScreen(parent, "somethingsaddons");
+    }
+}

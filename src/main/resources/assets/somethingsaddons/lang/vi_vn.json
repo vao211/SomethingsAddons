@@ -1,0 +1,77 @@
+﻿{
+  "somethingsaddons.midnightconfig.title": "Cấu Hình Somethings Addons",
+
+  "somethingsaddons.midnightconfig.category.protection": "Bảo Vệ & Tiện Ích",
+  "somethingsaddons.midnightconfig.category.gating": "Cơ Chế Chiến Đấu",
+  "somethingsaddons.midnightconfig.category.wither": "Boss Nguy Hiểm: Wither",
+
+  "somethingsaddons.midnightconfig.protectCreativePlayer": "Bảo Vệ Người Chơi Sáng Tạo",
+
+  "somethingsaddons.midnightconfig.title": "Cấu Hình Somethings Addons",
+
+  "somethingsaddons.midnightconfig.protectCreativePlayer": "Bảo Vệ Người Chơi Sáng Tạo",
+  "somethingsaddons.midnightconfig.protectCreativePlayer.tooltip": "Ngăn chặn người chơi ở chế độ Sáng tạo bị hạ gục bởi các ngoại lệ sát thương như lệnh /kill.",
+
+  "somethingsaddons.midnightconfig.applyDmgGating": "Bật Giới Hạn Sát Thương Nhận Vào",
+  "somethingsaddons.midnightconfig.applyDmgGating.tooltip": "Giới hạn lượng sát thương tối đa mà thực thể có thể nhận từ một đòn đánh.",
+
+  "somethingsaddons.midnightconfig.hpToApplyDmgGating": "HP Tối Thiểu Để Bật Giới Hạn",
+  "somethingsaddons.midnightconfig.hpToApplyDmgGating.tooltip": "Thực thể phải có lượng máu tối đa lớn hơn hoặc bằng mức này để áp dụng giới hạn sát thương.",
+
+  "somethingsaddons.midnightconfig.maxDamagePercentPerHit": "% Sát Thương Tối Đa Mỗi Đòn",
+  "somethingsaddons.midnightconfig.maxDamagePercentPerHit.tooltip": "Tỷ lệ phần trăm máu tối đa cao nhất có thể mất trong một đòn đánh (0.1 = 10%).",
+
+  "somethingsaddons.midnightconfig.applyHealGating": "Bật Giới Hạn Hồi Máu",
+  "somethingsaddons.midnightconfig.applyHealGating.tooltip": "Giới hạn tốc độ hồi máu của thực thể mỗi giây.",
+
+  "somethingsaddons.midnightconfig.maxHealPercentPerSecond": "% Hồi Máu Tối Đa Mỗi Giây",
+  "somethingsaddons.midnightconfig.maxHealPercentPerSecond.tooltip": "Tỷ lệ phần trăm máu tối đa cao nhất có thể hồi lại mỗi giây (0.05 = 5%).",
+
+  "somethingsaddons.midnightconfig.applyBossKnockbackImmunity": "Miễn Nhiễm Bật Lùi Cho Boss",
+  "somethingsaddons.midnightconfig.applyBossKnockbackImmunity.tooltip": "Cung cấp khả năng kháng bật lùi tuyệt đối cho các thực thể có máu tối đa cao.",
+
+  "somethingsaddons.midnightconfig.hpToApplyKnockbackImmunity": "HP Tối Thiểu Để Miễn Nhiễm",
+  "somethingsaddons.midnightconfig.hpToApplyKnockbackImmunity.tooltip": "Thực thể phải có lượng máu tối đa lớn hơn hoặc bằng mức này để được kháng bật lùi.",
+
+  "somethingsaddons.midnightconfig.globalBedrockProtection": "Bảo Vệ Bedrock Toàn Cầu",
+  "somethingsaddons.midnightconfig.globalBedrockProtection.tooltip": "Ngăn chặn MỌI quái vật hay boss từ các mod khác phá vỡ Bedrock hoặc các khối chống Wither.",
+
+  "somethingsaddons.midnightconfig.enableCustomBlockProtection": "Bật Bảo Vệ Khối Tùy Chỉnh",
+  "somethingsaddons.midnightconfig.enableCustomBlockProtection.tooltip": "Bật bảo vệ cho danh sách các khối tùy chỉnh ở bên dưới.",
+
+  "somethingsaddons.midnightconfig.protectedBlocks": "Danh Sách Khối Được Bảo Vệ",
+  "somethingsaddons.midnightconfig.protectedBlocks.tooltip": "Danh sách ID các khối (VD: minecraft:chest) không thể bị boss đập vỡ.",
+
+  "somethingsaddons.midnightconfig.enableDangerBoss": "Bật Chế Độ Boss Nguy Hiểm (Wither)",
+  "somethingsaddons.midnightconfig.enableDangerBoss.tooltip": "Bật các cơ chế cường hóa chỉ số, xuyên giáp và các dạng chiến đấu (Phase) cho Wither.",
+
+  "somethingsaddons.midnightconfig.witherNoBlockDrops": "Tắt Rớt Đồ Khi Wither Phá Block",
+  "somethingsaddons.midnightconfig.witherNoBlockDrops.tooltip": "Ngăn chặn rơi vật phẩm khi Wither phá vỡ block để giảm giật lag cho server.",
+
+  "somethingsaddons.midnightconfig.witherBaseHealth": "Wither Dạng 1: Máu Cơ Bản",
+  "somethingsaddons.midnightconfig.witherBaseHealth.tooltip": "Lượng máu tối đa của Wither khi vừa được triệu hồi.",
+
+  "somethingsaddons.midnightconfig.witherBaseArmor": "Wither Dạng 1: Giáp Cơ Bản",
+  "somethingsaddons.midnightconfig.witherBaseArmor.tooltip": "Lượng giáp bảo vệ của Wither trong Dạng 1.",
+
+  "somethingsaddons.midnightconfig.witherBaseDamage": "Wither Dạng 1: Sát Thương",
+  "somethingsaddons.midnightconfig.witherBaseDamage.tooltip": "Sát thương cận chiến của Wither trong Dạng 1.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Threshold": "Wither Dạng 2: Ngưỡng Máu Kích Hoạt",
+  "somethingsaddons.midnightconfig.witherPhase2Threshold.tooltip": "Wither sẽ chuyển sang Dạng 2 khi máu tụt xuống dưới mức này.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Armor": "Wither Dạng 2: Giáp",
+  "somethingsaddons.midnightconfig.witherPhase2Armor.tooltip": "Lượng giáp bảo vệ của Wither trong Dạng 2.",
+
+  "somethingsaddons.midnightconfig.witherPhase2Damage": "Wither Dạng 2: Sát Thương",
+  "somethingsaddons.midnightconfig.witherPhase2Damage.tooltip": "Sát thương cận chiến của Wither trong Dạng 2.",
+
+  "somethingsaddons.midnightconfig.witherArmorPiercing": "Wither Dạng 2: Xuyên Giáp",
+  "somethingsaddons.midnightconfig.witherArmorPiercing.tooltip": "Tỷ lệ phần trăm giáp của mục tiêu bị bỏ qua bởi mọi đòn tấn công của Wither trong Dạng 2 (0.3 = 30%).",
+
+  "somethingsaddons.midnightconfig.witherSkullDirectDamage": "Đầu Lâu Wither: Sát Thương Trực Tiếp",
+  "somethingsaddons.midnightconfig.witherSkullDirectDamage.tooltip": "Sát thương cơ bản gây ra khi Đầu Lâu Wither ném trúng trực tiếp mục tiêu.",
+
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower": "Đầu Lâu Wither: Sức Mạnh Vụ Nổ",
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Bán kính và tỷ lệ sát thương của vụ nổ Đầu Lâu (Mặc định game là 1.0)."
+}
