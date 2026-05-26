@@ -5,11 +5,13 @@
 A Minecraft Fabric mod adding various enhancements and utilities to your game.
 
 ## Features
-* **Damage & Healing Control:** Adds damage gating and custom healing for mobs (highly recommended for bosses).
-* **Wither DangerBoss Mode:** Introduces a special DangerBoss mode for the Wither (fully configurable).
-* **Block Protection:** Adds a feature to protect blocks from being destroyed (fully configurable).
-* **Bug Fixes & Compatibility:** Fixes issues with bosses from other mods and patches various bedrock-breaking bugs.
-* **On/Off Looting:** Unlock/Lock Button Looting in inventory GUI
+- **Damage & Healing Control:** Adds damage gating and custom healing for mobs (highly recommended for bosses).
+- **Wither DangerBoss Mode:** Introduces a special configurable DangerBoss mode for the Wither.
+- **Ender Dragon DangerBoss Mode:** Enhanced health, armor, and custom fireball attack mechanics.
+- **Block Protection:** Configurable protection to prevent blocks from being destroyed.
+- **Bug Fixes & Compatibility:** Patches issues with bosses from other mods and fixes bedrock-breaking exploits.
+- **Pickup Lock:** Integrated button in inventory GUI to toggle automatic item pickup.
+- **Enchantment Limiter:** Limit the maximum number of enchantments allowed per item.
 
 ## Requirements
 To play with this mod, you need the following installed:

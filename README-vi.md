@@ -6,10 +6,11 @@ Một bản mod dành cho Minecraft Fabric nhằm bổ sung các cải tiến v�
 
 ## Tính năng chính
 * **Kiểm soát Sát thương & Hồi máu:** Thêm khả năng giới hạn sát thương nhận vào (damage gating) và tính năng hồi máu cho mob (khuyên dùng cho Boss).
-* **Wither DangerBoss:** Thêm chế độ DangerBoss đặc biệt dành cho Wither (có thể tùy chỉnh trong config).
+* **DangerBoss Mode (Wither & Ender Dragon):** Chế độ thử thách đặc biệt giúp tăng cường chỉ số (Máu, Giáp), sát thương và thêm các chiêu thức tấn công độc nhất cho Wither và Rồng Ender. Mọi thông số đều có thể tùy chỉnh thông qua Mod Menu. 
 * **Bảo vệ Khối:** Thêm tính năng bảo vệ block khỏi bị phá hủy (có thể tùy chỉnh trong config).
 * **Sửa lỗi & Tương thích:** Fix lỗi liên quan đến boss từ các mod khác và khắc phục một vài bug phá Bedrock.
 * **Tắt/Bật Looting:** Ẩn/Nhấp nút Looting trong Giao diện Inventory
+* **Giới hạn Phù phép (Enchantment Limiter):** Ngăn chặn việc "nhồi nhét" quá nhiều bùa chú lên một trang bị. Giới hạn số lượng enchant tối đa trên một món đồ, tương thích hoàn toàn với *Enchanting Infuser* và *Anvil* (Đe rèn) mặc định.
 
 
 ## Yêu cầu hệ thống
