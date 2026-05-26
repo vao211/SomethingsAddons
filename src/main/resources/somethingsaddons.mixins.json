@@ -9,7 +9,9 @@
     "WorldMixin",
     "WitherEntityMixin",
     "WitherSkullEntityMixin",
-    "ItemEntityMixin"
+    "ItemEntityMixin",
+    "AnvilMenuMixin",
+    "InfuserMenuMixin"
   ],
   "injectors": {
     "defaultRequire": 1

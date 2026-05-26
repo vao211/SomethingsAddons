@@ -1,4 +1,10 @@
 ﻿{
+  "somethingsaddons.midnightconfig.enableEnchantmentLimit": "Enable Enchantment Limit",
+  "somethingsaddons.midnightconfig.enableEnchantmentLimit.tooltip": "Limits the maximum number of different enchantments an item can have.",
+  "somethingsaddons.midnightconfig.maxEnchantmentsPerItem": "Max Enchantments Per Item",
+  "somethingsaddons.midnightconfig.maxEnchantmentsPerItem.tooltip": "The maximum number of different enchantments allowed on a single item.",
+  "somethingsaddons.message.enchantment_limit": "This item has reached the maximum limit of %s enchantments!",
+
   "somethingsaddons.gui.pickup_lock.on": "🔒",
   "somethingsaddons.gui.pickup_lock.off": "🔓",
 

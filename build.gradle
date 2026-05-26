@@ -46,6 +46,8 @@ dependencies {
     modImplementation include("maven.modrinth:midnightlib:1.5.7-fabric")
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation("com.terraformersmc:modmenu:11.0.4")
+    //for compile only
+    modCompileOnly fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 processResources {

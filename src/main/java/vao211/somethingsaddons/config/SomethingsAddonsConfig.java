@@ -30,6 +30,11 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     @Entry(category = "gating", min = 1.0)
     public static double hpToApplyKnockbackImmunity = 150.0D;
 
+    @Entry(category = "limiter")
+    public static boolean enableEnchantmentLimit = false;
+
+    @Entry(category = "limiter", min = 1)
+    public static int maxEnchantmentsPerItem = 10;
 
     @Entry(category = "wither")
     public static boolean enableDangerBoss = true;
