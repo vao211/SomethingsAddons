@@ -10,6 +10,7 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import vao211.somethingsaddons.config.SomethingsAddonsConfig;
+import vao211.somethingsaddons.entity.ModEntities;
 import vao211.somethingsaddons.network.PickupLockPayload;
 
 import java.io.IOException;
@@ -23,7 +24,7 @@ public class Somethingsaddons implements ModInitializer {
     @Override
     public void onInitialize() {
         MidnightConfig.init(MOD_ID, SomethingsAddonsConfig.class);
-
+        ModEntities.register();
         PayloadTypeRegistry.playC2S().register(PickupLockPayload.ID, PickupLockPayload.CODEC);
         PayloadTypeRegistry.playS2C().register(PickupLockPayload.ID, PickupLockPayload.CODEC);
 

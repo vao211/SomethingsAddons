@@ -11,7 +11,8 @@
     "WitherSkullEntityMixin",
     "ItemEntityMixin",
     "AnvilMenuMixin",
-    "InfuserMenuMixin"
+    "InfuserMenuMixin",
+    "EnderDragonEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

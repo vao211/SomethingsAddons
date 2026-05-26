@@ -61,4 +61,12 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     public static double witherSkullDirectDamage = 9.0D;
     @Entry(category = "wither", min = 0.0)
     public static double witherSkullExplosionPower = 2.0D;
+
+
+    //ENDER DRAGON
+    @Entry(category = "ender_dragon") public static boolean enableDangerDragon = true;
+    @Entry(category = "ender_dragon", min = 1.0) public static double enderDragonBaseHealth = 500.0D;
+    @Entry(category = "ender_dragon", min = 0.0) public static double enderDragonBaseArmor = 15.0D;
+    @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballDirectDamage = 12.0D;
+    @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballExplosionPower = 3.0D;
 }

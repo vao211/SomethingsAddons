@@ -1,4 +1,16 @@
 ﻿{
+  "somethingsaddons.midnightconfig.category.ender_dragon": "Boss Nguy Hiểm: Rồng Ender",
+  "somethingsaddons.midnightconfig.enableDangerDragon": "Bật Chế Độ Rồng Nguy Hiểm",
+  "somethingsaddons.midnightconfig.enableDangerDragon.tooltip": "Kích hoạt cường hóa máu, giáp và cơ chế khè cầu lửa tùy chỉnh cho Rồng Ender.",
+  "somethingsaddons.midnightconfig.enderDragonBaseHealth": "Máu Rồng Ender",
+  "somethingsaddons.midnightconfig.enderDragonBaseHealth.tooltip": "Lượng máu tối đa của Rồng Ender khi bật chế độ nguy hiểm.",
+  "somethingsaddons.midnightconfig.enderDragonBaseArmor": "Giáp Rồng Ender",
+  "somethingsaddons.midnightconfig.enderDragonBaseArmor.tooltip": "Lượng điểm giáp bảo vệ của Rồng Ender.",
+  "somethingsaddons.midnightconfig.dragonFireballDirectDamage": "Cầu Lửa: Sát Thương Trực Tiếp",
+  "somethingsaddons.midnightconfig.dragonFireballDirectDamage.tooltip": "Sát thương khi quả cầu lửa tùy chỉnh va chạm trực tiếp mục tiêu.",
+  "somethingsaddons.midnightconfig.dragonFireballExplosionPower": "Cầu Lửa: Sức Mạnh Vụ Nổ",
+  "somethingsaddons.midnightconfig.dragonFireballExplosionPower.tooltip": "Bán kính nổ và mức độ tàn phá khi quả cầu lửa chạm mục tiêu hoặc mặt đất.",
+
   "somethingsaddons.midnightconfig.enableEnchantmentLimit": "Enable Enchantment Limit",
   "somethingsaddons.midnightconfig.enableEnchantmentLimit.tooltip": "Limits the maximum number of different enchantments an item can have.",
   "somethingsaddons.midnightconfig.maxEnchantmentsPerItem": "Max Enchantments Per Item",

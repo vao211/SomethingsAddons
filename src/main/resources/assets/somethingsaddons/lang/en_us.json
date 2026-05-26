@@ -1,4 +1,16 @@
 ﻿{
+  "somethingsaddons.midnightconfig.category.ender_dragon": "Danger Boss: Ender Dragon",
+  "somethingsaddons.midnightconfig.enableDangerDragon": "Enable Danger Dragon",
+  "somethingsaddons.midnightconfig.enableDangerDragon.tooltip": "Enables enhanced health, armor, and custom fireball attack mechanics for the Ender Dragon.",
+  "somethingsaddons.midnightconfig.enderDragonBaseHealth": "Ender Dragon Health",
+  "somethingsaddons.midnightconfig.enderDragonBaseHealth.tooltip": "Maximum health of the Ender Dragon when danger mechanics are enabled.",
+  "somethingsaddons.midnightconfig.enderDragonBaseArmor": "Ender Dragon Armor",
+  "somethingsaddons.midnightconfig.enderDragonBaseArmor.tooltip": "Armor points of the Ender Dragon.",
+  "somethingsaddons.midnightconfig.dragonFireballDirectDamage": "Fireball Direct Damage",
+  "somethingsaddons.midnightconfig.dragonFireballDirectDamage.tooltip": "Direct impact damage dealt by the custom dragon fireballs.",
+  "somethingsaddons.midnightconfig.dragonFireballExplosionPower": "Fireball Explosion Power",
+  "somethingsaddons.midnightconfig.dragonFireballExplosionPower.tooltip": "Explosion radius and destruction level when a fireball impacts.",
+
   "somethingsaddons.midnightconfig.enableEnchantmentLimit": "Enable Enchantment Limit",
   "somethingsaddons.midnightconfig.enableEnchantmentLimit.tooltip": "Limits the maximum number of different enchantments an item can have.",
   "somethingsaddons.midnightconfig.maxEnchantmentsPerItem": "Max Enchantments Per Item",

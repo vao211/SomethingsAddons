@@ -2,6 +2,7 @@ package vao211.somethingsaddons.mixin;
 import net.minecraft.entity.boss.WitherEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import vao211.somethingsaddons.config.SomethingsAddonsConfig;
@@ -33,9 +34,7 @@ public abstract class LivingEntityMixin {
                                                    float amount,
                                                    CallbackInfoReturnable<Boolean> cir) {
         if (source.isIn(DamageTypeTags.BYPASSES_INVULNERABILITY) || amount > 1000000.0f) {
-
             LivingEntity entity = (LivingEntity) (Object) this;
-
             if (SomethingsAddonsConfig.protectCreativePlayer && entity instanceof PlayerEntity player && player.isCreative()) {
                 cir.setReturnValue(false);
                 return;
@@ -144,6 +143,20 @@ public abstract class LivingEntityMixin {
 
                 cir.setReturnValue(finalDamage);
             }
+        }
+    }
+
+    @Inject(method = "getMaxHealth", at = @At("HEAD"), cancellable = true)
+    private void somethingsaddons$dynamicDragonMaxHealth(CallbackInfoReturnable<Float> cir) {
+        if (SomethingsAddonsConfig.enableDangerDragon && (Object) this instanceof EnderDragonEntity) {
+            cir.setReturnValue((float) SomethingsAddonsConfig.enderDragonBaseHealth);
+        }
+    }
+
+    @Inject(method = "getArmor", at = @At("HEAD"), cancellable = true)
+    private void somethingsaddons$dynamicDragonArmor(CallbackInfoReturnable<Integer> cir) {
+        if (SomethingsAddonsConfig.enableDangerDragon && (Object) this instanceof EnderDragonEntity) {
+            cir.setReturnValue((int) SomethingsAddonsConfig.enderDragonBaseArmor);
         }
     }
 
