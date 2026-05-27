@@ -1,5 +1,5 @@
 ﻿{
-  "somethingsaddons.midnightconfig.category.ender_dragon": "Danger Boss: Ender Dragon",
+  "somethingsaddons.midnightconfig.category.ender_dragon": "Ender Dragon",
   "somethingsaddons.midnightconfig.enableDangerDragon": "Enable Danger Dragon",
   "somethingsaddons.midnightconfig.enableDangerDragon.tooltip": "Enables enhanced health, armor, and custom fireball attack mechanics for the Ender Dragon.",
   "somethingsaddons.midnightconfig.enderDragonBaseHealth": "Ender Dragon Health",
@@ -32,7 +32,7 @@
 
   "somethingsaddons.midnightconfig.category.protection": "Protection & Utilities",
   "somethingsaddons.midnightconfig.category.gating": "Combat Mechanics",
-  "somethingsaddons.midnightconfig.category.wither": "Danger Boss: Wither",
+  "somethingsaddons.midnightconfig.category.wither": "Wither",
 
   "somethingsaddons.midnightconfig.protectCreativePlayer": "Protect Creative Players",
 

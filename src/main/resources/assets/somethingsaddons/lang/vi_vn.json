@@ -1,5 +1,5 @@
 ﻿{
-  "somethingsaddons.midnightconfig.category.ender_dragon": "Boss Nguy Hiểm: Rồng Ender",
+  "somethingsaddons.midnightconfig.category.ender_dragon": "Rồng Ender",
   "somethingsaddons.midnightconfig.enableDangerDragon": "Bật Chế Độ Rồng Nguy Hiểm",
   "somethingsaddons.midnightconfig.enableDangerDragon.tooltip": "Kích hoạt cường hóa máu, giáp và cơ chế khè cầu lửa tùy chỉnh cho Rồng Ender.",
   "somethingsaddons.midnightconfig.enderDragonBaseHealth": "Máu Rồng Ender",
@@ -31,7 +31,7 @@
 
   "somethingsaddons.midnightconfig.category.protection": "Bảo Vệ & Tiện Ích",
   "somethingsaddons.midnightconfig.category.gating": "Cơ Chế Chiến Đấu",
-  "somethingsaddons.midnightconfig.category.wither": "Boss Nguy Hiểm: Wither",
+  "somethingsaddons.midnightconfig.category.wither": "Wither",
 
   "somethingsaddons.midnightconfig.protectCreativePlayer": "Bảo Vệ Người Chơi Sáng Tạo",
 
