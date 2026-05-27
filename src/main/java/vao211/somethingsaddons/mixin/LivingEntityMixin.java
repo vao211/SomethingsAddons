@@ -4,6 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.player.PlayerEntity;
 import vao211.somethingsaddons.config.SomethingsAddonsConfig;
 import org.spongepowered.asm.mixin.Mixin;
@@ -146,6 +147,8 @@ public abstract class LivingEntityMixin {
         }
     }
 
+    //ENDER DRAGON
+    @SuppressWarnings("ConstantConditions")
     @Inject(method = "getMaxHealth", at = @At("HEAD"), cancellable = true)
     private void somethingsaddons$dynamicDragonMaxHealth(CallbackInfoReturnable<Float> cir) {
         if (SomethingsAddonsConfig.enableDangerDragon && (Object) this instanceof EnderDragonEntity) {
@@ -153,11 +156,20 @@ public abstract class LivingEntityMixin {
         }
     }
 
+    @SuppressWarnings("ConstantConditions")
     @Inject(method = "getArmor", at = @At("HEAD"), cancellable = true)
     private void somethingsaddons$dynamicDragonArmor(CallbackInfoReturnable<Integer> cir) {
         if (SomethingsAddonsConfig.enableDangerDragon && (Object) this instanceof EnderDragonEntity) {
             cir.setReturnValue((int) SomethingsAddonsConfig.enderDragonBaseArmor);
         }
+    }
+
+    @ModifyVariable(method = "damage", at = @At("HEAD"), argsOnly = true)
+    private float somethingsaddons$modifyDragonBreathDamage(float amount, DamageSource source) {
+        if (SomethingsAddonsConfig.enableDangerDragon && source.isOf(DamageTypes.DRAGON_BREATH)) {
+            return (float) SomethingsAddonsConfig.dragonBreathDamage;
+        }
+        return amount;
     }
 
 }

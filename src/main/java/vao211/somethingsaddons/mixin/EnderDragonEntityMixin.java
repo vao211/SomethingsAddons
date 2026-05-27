@@ -25,7 +25,7 @@ public abstract class EnderDragonEntityMixin {
         if (dragon.getWorld().isClient()) return;
         if (SomethingsAddonsConfig.enableDangerDragon) {
             somethingsaddons$fireballTimer++;
-            if (somethingsaddons$fireballTimer >= 120) {
+            if (somethingsaddons$fireballTimer >= SomethingsAddonsConfig.dragonFireballCooldownTicks) {
                 somethingsaddons$fireballTimer = 0;
 
                 if (dragon.getPhaseManager().getCurrent() != null) {
@@ -41,7 +41,7 @@ public abstract class EnderDragonEntityMixin {
                         );
 
                         for (ServerPlayerEntity player : targets) {
-                            if (dragon.getRandom().nextFloat() <= 0.20f) {
+                            if (dragon.getRandom().nextFloat() <= SomethingsAddonsConfig.dragonFireballChance) {
                                 somethingsaddons$shootFireballAt(dragon, player);
                             }
                         }

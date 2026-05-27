@@ -10,7 +10,15 @@
   "somethingsaddons.midnightconfig.dragonFireballDirectDamage.tooltip": "Direct impact damage dealt by the custom dragon fireballs.",
   "somethingsaddons.midnightconfig.dragonFireballExplosionPower": "Fireball Explosion Power",
   "somethingsaddons.midnightconfig.dragonFireballExplosionPower.tooltip": "Explosion radius and destruction level when a fireball impacts.",
+  "somethingsaddons.midnightconfig.dragonFireballCooldownTicks": "Fireball Cooldown (Ticks)",
+  "somethingsaddons.midnightconfig.dragonFireballCooldownTicks.tooltip": "The cooldown between fireball attacks in ticks (20 ticks = 1 second).",
+  "somethingsaddons.midnightconfig.dragonFireballChance": "Fireball Attack Chance",
+  "somethingsaddons.midnightconfig.dragonFireballChance.tooltip": "The chance (0.0 to 1.0) for each player to be targeted by a fireball every cooldown cycle.",
+  "somethingsaddons.midnightconfig.dragonBreathDamage": "Dragon Breath Damage",
+  "somethingsaddons.midnightconfig.dragonBreathDamage.tooltip": "The damage dealt per hit by the Dragon's breath/acid cloud.",
 
+
+  "somethingsaddons.midnightconfig.category.limiter" : "Limiter",
   "somethingsaddons.midnightconfig.enableEnchantmentLimit": "Enable Enchantment Limit",
   "somethingsaddons.midnightconfig.enableEnchantmentLimit.tooltip": "Limits the maximum number of different enchantments an item can have.",
   "somethingsaddons.midnightconfig.maxEnchantmentsPerItem": "Max Enchantments Per Item",

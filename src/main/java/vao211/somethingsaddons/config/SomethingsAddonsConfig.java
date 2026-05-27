@@ -67,6 +67,12 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     @Entry(category = "ender_dragon") public static boolean enableDangerDragon = true;
     @Entry(category = "ender_dragon", min = 1.0) public static double enderDragonBaseHealth = 500.0D;
     @Entry(category = "ender_dragon", min = 0.0) public static double enderDragonBaseArmor = 15.0D;
+    @Entry(category = "ender_dragon", min = 1)
+    public static int dragonFireballCooldownTicks = 120;
+    @Entry(category = "ender_dragon", min = 0.0, max = 1.0)
+    public static double dragonFireballChance = 0.5D;
     @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballDirectDamage = 12.0D;
     @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballExplosionPower = 3.0D;
+    @Entry(category = "ender_dragon", min = 0.0)
+    public static double dragonBreathDamage = 4.0D;
 }
