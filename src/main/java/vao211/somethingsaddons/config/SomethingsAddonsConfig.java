@@ -64,15 +64,37 @@ public class SomethingsAddonsConfig extends MidnightConfig {
 
 
     //ENDER DRAGON
-    @Entry(category = "ender_dragon") public static boolean enableDangerDragon = true;
-    @Entry(category = "ender_dragon", min = 1.0) public static double enderDragonBaseHealth = 500.0D;
-    @Entry(category = "ender_dragon", min = 0.0) public static double enderDragonBaseArmor = 15.0D;
+    @Entry(category = "ender_dragon")
+    public static boolean enableDangerDragon = true;
+    @Entry(category = "ender_dragon", min = 1.0)
+    public static double enderDragonBaseHealth = 500.0D;
+    @Entry(category = "ender_dragon", min = 0.0)
+    public static double enderDragonBaseArmor = 15.0D;
     @Entry(category = "ender_dragon", min = 1)
     public static int dragonFireballCooldownTicks = 120;
     @Entry(category = "ender_dragon", min = 0.0, max = 1.0)
     public static double dragonFireballChance = 0.5D;
-    @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballDirectDamage = 12.0D;
-    @Entry(category = "ender_dragon", min = 0.0) public static double dragonFireballExplosionPower = 3.0D;
+    @Entry(category = "ender_dragon", min = 0.0)
+    public static double dragonFireballDirectDamage = 12.0D;
+    @Entry(category = "ender_dragon", min = 0.0)
+    public static double dragonFireballExplosionPower = 3.0D;
     @Entry(category = "ender_dragon", min = 0.0)
     public static double dragonBreathDamage = 4.0D;
+
+
+    //Config Min DMG and Max Healing
+    @Entry(category = "config_dmg_and_healing")
+    public static boolean enableDmgAndHealingControl = false;
+    @Entry(category = "config_dmg_and_healing", min = 0.0)
+    public static double minDmgTakenForPlayer = 0.0D;
+    @Entry(category = "config_dmg_and_healing", min = 0.0)
+    public static double minDmgTakenForMob = 0.0D;
+    @Entry(category = "config_dmg_and_healing", min = 0.0)
+    public static double maxHealingForPlayer = 20.0D;
+    @Entry(category = "config_dmg_and_healing", min = 0.0, max = 1000000.0)
+    public static double maxHealingForMob = 1000000.0D;
+    @Entry(category = "config_dmg_and_healing")
+    public static boolean enableAntiHealDebuff = true;
+    @Entry(category = "config_dmg_and_healing")
+    public static boolean enableMinDmgScalingWithBossHp = true;
 }

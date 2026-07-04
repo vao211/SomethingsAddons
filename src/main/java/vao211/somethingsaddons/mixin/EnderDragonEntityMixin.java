@@ -1,9 +1,9 @@
 package vao211.somethingsaddons.mixin;
 
 import net.minecraft.entity.boss.dragon.EnderDragonEntity;
-import net.minecraft.entity.boss.dragon.phase.PhaseType; // Đổi thành PhaseType
+import net.minecraft.entity.boss.dragon.phase.PhaseType;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.sound.SoundCategory; // Đổi thành SoundCategory
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;

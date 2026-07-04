@@ -46,6 +46,7 @@ public abstract class WitherEntityMixin {
         }
     }
 
+    //Protect block breaking from Wither
     @Redirect(
             method = "mobTick",
             at = @At(value = "INVOKE",

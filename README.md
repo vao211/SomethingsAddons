@@ -12,6 +12,10 @@ A Minecraft Fabric mod adding various enhancements and utilities to your game.
 - **Bug Fixes & Compatibility:** Patches issues with bosses from other mods and fixes bedrock-breaking exploits.
 - **Pickup Lock:** Integrated button in inventory GUI to toggle automatic item pickup.
 - **Enchantment Limiter:** Limit the maximum number of enchantments allowed per item.
+- **Anti-Godmode:** Prevents players from exploiting *Resistance 255* or extreme armor stacking. Every physical hit or boss skill (Warden, Wither, Ender Dragon) guarantees a **Minimum Damage** threshold.
+- **Boss Scaling:** Late-game encounters are now genuinely threatening. The higher the attacker's Max HP (100+), the higher the minimum damage they inflict (scaling up to 5x).
+- **Anti-Heal Debuff:** Taking a hit from a Boss (>= 100 HP) reduces your healing and absorption effectiveness by 50% for 5 seconds. No more spamming Golden Apples to out-heal boss damage!
+- **Vanilla Safe:** 100% compatible with Shield blocking mechanics and environmental damage (Fire, Drowning, Void).
 
 ## Requirements
 To play with this mod, you need the following installed:

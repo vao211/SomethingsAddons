@@ -124,7 +124,7 @@ public abstract class LivingEntityMixin {
         }
     }
 
-    //Armor Piercing
+    //Armor Piercing For Wither
     @Inject(method = "applyArmorToDamage", at = @At("HEAD"), cancellable = true)
     private void somethingsaddons$trueArmorPiercing(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
         if (!SomethingsAddonsConfig.enableDangerBoss) return;
