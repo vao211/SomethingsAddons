@@ -50,10 +50,6 @@
   "somethingsaddons.midnightconfig.category.wither": "Wither",
 
   "somethingsaddons.midnightconfig.protectCreativePlayer": "Bảo Vệ Người Chơi Sáng Tạo",
-
-  "somethingsaddons.midnightconfig.title": "Cấu Hình Somethings Addons",
-
-  "somethingsaddons.midnightconfig.protectCreativePlayer": "Bảo Vệ Người Chơi Sáng Tạo",
   "somethingsaddons.midnightconfig.protectCreativePlayer.tooltip": "Ngăn chặn người chơi ở chế độ Sáng tạo bị hạ gục bởi các ngoại lệ sát thương như lệnh /kill.",
 
   "somethingsaddons.midnightconfig.applyDmgGating": "Bật Giới Hạn Sát Thương Nhận Vào",
@@ -83,8 +79,8 @@
   "somethingsaddons.midnightconfig.enableCustomBlockProtection": "Bật Bảo Vệ Khối Tùy Chỉnh",
   "somethingsaddons.midnightconfig.enableCustomBlockProtection.tooltip": "Bật bảo vệ cho danh sách các khối tùy chỉnh ở bên dưới.",
 
-  "somethingsaddons.midnightconfig.protectedBlocks": "Danh Sách Khối Được Bảo Vệ",
-  "somethingsaddons.midnightconfig.protectedBlocks.tooltip": "Danh sách ID các khối (VD: minecraft:chest) không thể bị boss đập vỡ.",
+  "somethingsaddons.midnightconfig.protectedBlocksFromBoss": "Danh Sách Khối Được Bảo Vệ",
+  "somethingsaddons.midnightconfig.protectedBlocksFromBoss.tooltip": "Danh sách ID các khối (VD: minecraft:chest) không thể bị boss đập vỡ.",
 
   "somethingsaddons.midnightconfig.enableDangerBoss": "Bật Chế Độ Boss Nguy Hiểm (Wither)",
   "somethingsaddons.midnightconfig.enableDangerBoss.tooltip": "Bật các cơ chế cường hóa chỉ số, xuyên giáp và các dạng chiến đấu (Phase) cho Wither.",

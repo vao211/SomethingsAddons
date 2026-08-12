@@ -30,7 +30,7 @@ public abstract class WorldMixin {
         }
         if (!shouldProtect && SomethingsAddonsConfig.enableCustomBlockProtection) {
             String blockIdStr = Registries.BLOCK.getId(targetState.getBlock()).toString();
-            if (SomethingsAddonsConfig.protectedBlocks.contains(blockIdStr)) {
+            if (SomethingsAddonsConfig.protectedBlocksFromBoss.contains(blockIdStr)) {
                 shouldProtect = true;
             }
         }

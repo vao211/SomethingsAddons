@@ -44,13 +44,9 @@
   "somethingsaddons.gui.pickup_lock.on": "🔒",
   "somethingsaddons.gui.pickup_lock.off": "🔓",
 
-  "somethingsaddons.midnightconfig.title": "Somethings Addons Config",
-
   "somethingsaddons.midnightconfig.category.protection": "Protection & Utilities",
   "somethingsaddons.midnightconfig.category.gating": "Combat Mechanics",
   "somethingsaddons.midnightconfig.category.wither": "Wither",
-
-  "somethingsaddons.midnightconfig.protectCreativePlayer": "Protect Creative Players",
 
   "somethingsaddons.midnightconfig.title": "Somethings Addons Config",
 
@@ -84,8 +80,8 @@
   "somethingsaddons.midnightconfig.enableCustomBlockProtection": "Enable Custom Block Protection",
   "somethingsaddons.midnightconfig.enableCustomBlockProtection.tooltip": "Enables the custom list of protected blocks below.",
 
-  "somethingsaddons.midnightconfig.protectedBlocks": "Protected Blocks List",
-  "somethingsaddons.midnightconfig.protectedBlocks.tooltip": "List of block IDs (e.g., minecraft:chest) that cannot be broken by bosses.",
+  "somethingsaddons.midnightconfig.protectedBlocksFromBoss": "Protected Blocks List",
+  "somethingsaddons.midnightconfig.protectedBlocksFromBoss.tooltip": "List of block IDs (e.g., minecraft:chest) that cannot be broken by bosses.",
 
   "somethingsaddons.midnightconfig.enableDangerBoss": "Enable Danger Boss (Wither)",
   "somethingsaddons.midnightconfig.enableDangerBoss.tooltip": "Enables the enhanced stats, armor piercing, and phase mechanics for the Wither.",

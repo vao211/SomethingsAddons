@@ -1,6 +1,7 @@
 package vao211.somethingsaddons.config;
 import eu.midnightdust.lib.config.MidnightConfig;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SomethingsAddonsConfig extends MidnightConfig {
@@ -11,7 +12,7 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     @Entry(category = "protection")
     public static boolean enableCustomBlockProtection = true;
     @Entry(category = "protection")
-    public static List<String> protectedBlocks = List.of();
+    public static List<String> protectedBlocksFromBoss = new ArrayList<>();
 
 
     @Entry(category = "gating")
