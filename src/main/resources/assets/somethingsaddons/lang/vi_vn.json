@@ -113,5 +113,19 @@
   "somethingsaddons.midnightconfig.witherSkullDirectDamage.tooltip": "Sát thương cơ bản gây ra khi Đầu Lâu Wither ném trúng trực tiếp mục tiêu.",
 
   "somethingsaddons.midnightconfig.witherSkullExplosionPower": "Đầu Lâu Wither: Sức Mạnh Vụ Nổ",
-  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Bán kính và tỷ lệ sát thương của vụ nổ Đầu Lâu (Mặc định game là 1.0)."
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Bán kính và tỷ lệ sát thương của vụ nổ Đầu Lâu (Mặc định game là 1.0).",
+
+  "somethingsaddons.midnightconfig.category.warden": "Cài đặt Warden",
+
+  "somethingsaddons.midnightconfig.enableWardenBuff": "Bật Cường hóa Warden (Enrage)",
+  "somethingsaddons.midnightconfig.enableWardenBuff.tooltip": "Nếu bật, Warden sẽ liên tục tự cường hóa theo thời gian: Hồi máu, to ra, tăng giáp, tăng sát thương và nổ đẩy lùi xung quanh.",
+
+  "somethingsaddons.midnightconfig.wardenMaxBuffTimes": "Số Lần Cường Hóa Tối Đa",
+  "somethingsaddons.midnightconfig.wardenMaxBuffTimes.tooltip": "Số lần Warden có thể cộng dồn sức mạnh của mình (Mặc định: 3).",
+
+  "somethingsaddons.midnightconfig.wardenBuffTimeThreshold": "Chu Kỳ Cường Hóa (Giây)",
+  "somethingsaddons.midnightconfig.wardenBuffTimeThreshold.tooltip": "Thời gian chờ giữa các lần cường hóa. Lần buff đầu tiên luôn kích hoạt sau khi được triệu hồi 5 giây.",
+
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay": "Giới hạn Rớt Đồ (1 con/Ngày)",
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "Nếu bật, chỉ con Warden đầu tiên bị giết trong 1 ngày Minecraft (24000 ticks) mới rớt đồ. Ngăn chặn các cỗ máy Farm Warden vô hạn."
 }

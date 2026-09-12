@@ -13,7 +13,9 @@
     "MoonknightMixin",
     "WitherEntityMixin",
     "WitherSkullEntityMixin",
-    "WorldMixin"
+    "WorldMixin",
+    "WardenBuffMixin",
+    "DropLimitMixin"
   ],
   "injectors": {
     "defaultRequire": 1

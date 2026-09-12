@@ -82,6 +82,18 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     @Entry(category = "ender_dragon", min = 0.0)
     public static double dragonBreathDamage = 4.0D;
 
+    //Warden
+    @Entry(category = "warden")
+    public static boolean enableWardenBuff = true;
+
+    @Entry(category = "warden", min = 1)
+    public static int wardenMaxBuffTimes = 3;
+
+    @Entry(category = "warden", min = 1)
+    public static int wardenBuffTimeThreshold = 30; //Seconds
+
+    @Entry(category = "warden")
+    public static boolean limitWardenDropsPerDay = true;
 
     //Config Min DMG and Max Healing
     @Entry(category = "config_dmg_and_healing")

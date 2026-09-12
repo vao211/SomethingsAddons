@@ -16,6 +16,8 @@ public class Somethingsaddons implements ModInitializer {
     public static final String MOD_ID = "somethingsaddons";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+    public static long lastWardenKillDay = -1;
+
     @Override
     public void onInitialize() {
         MidnightConfig.init(MOD_ID, SomethingsAddonsConfig.class);

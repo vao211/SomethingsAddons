@@ -114,5 +114,19 @@
   "somethingsaddons.midnightconfig.witherSkullDirectDamage.tooltip": "Base damage dealt when a Wither Skull directly hits a target.",
 
   "somethingsaddons.midnightconfig.witherSkullExplosionPower": "Wither Skull: Explosion Power",
-  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Radius and damage scale of the Wither Skull explosion (Vanilla is 1.0)."
+  "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Radius and damage scale of the Wither Skull explosion (Vanilla is 1.0).",
+
+  "somethingsaddons.midnightconfig.category.warden": "Warden Settings",
+
+  "somethingsaddons.midnightconfig.enableWardenBuff": "Enable Warden Enrage",
+  "somethingsaddons.midnightconfig.enableWardenBuff.tooltip": "If enabled, the Warden will progressively buff itself over time, gaining size, armor, damage, and emitting AoE knockback.",
+
+  "somethingsaddons.midnightconfig.wardenMaxBuffTimes": "Max Buff Stacks",
+  "somethingsaddons.midnightconfig.wardenMaxBuffTimes.tooltip": "The maximum number of times the Warden can enrage/buff itself (Default: 3).",
+
+  "somethingsaddons.midnightconfig.wardenBuffTimeThreshold": "Buff Interval (Seconds)",
+  "somethingsaddons.midnightconfig.wardenBuffTimeThreshold.tooltip": "Time required between each buff stage. The very first buff always triggers 5 seconds after spawning.",
+
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay": "Limit Warden Drops (1/Day)",
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "If enabled, only the first Warden killed per Minecraft day (24000 ticks) will drop items. Prevents infinite farming."
 }
