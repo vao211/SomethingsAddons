@@ -142,5 +142,13 @@
   "somethingsaddons.midnightconfig.campfireHealInterval": "Chu Kỳ Hồi Phục (s)",
   "somethingsaddons.midnightconfig.campfireHealInterval.tooltip": "Thời gian giữa mỗi nhịp hồi máu.",
   "somethingsaddons.midnightconfig.campfireHealAmount": "Lượng Máu Mỗi Nhịp",
-  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Lượng HP được hồi mỗi nhịp (1.0 = nửa tim)."
+  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Lượng HP được hồi mỗi nhịp (1.0 = nửa tim).",
+
+  "somethingsaddons.midnightconfig.category.pet": "Cài đặt Thú Cưng",
+  "somethingsaddons.midnightconfig.enablePetReturnToSpawn": "Thú Cưng Tự Về Nhà",
+  "somethingsaddons.midnightconfig.enablePetReturnToSpawn.tooltip": "Nếu thú cưng đi lạc khỏi chủ quá xa trong một khoảng thời gian, chúng sẽ tự dịch chuyển về giường của chủ (hoặc World Spawn). Không áp dụng khi thú cưng đang ngồi.",
+  "somethingsaddons.midnightconfig.petReturnLostTimer": "Thời Gian Đi Lạc (Giây)",
+  "somethingsaddons.midnightconfig.petReturnLostTimer.tooltip": "Thời gian thú cưng phải chờ khi bị lạc trước khi tự dịch chuyển (Mặc định: 120s).",
+  "somethingsaddons.midnightconfig.petLostRadius": "Bán Kính Đi Lạc (Block)",
+  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Khoảng cách tối đa so với chủ trước khi bị tính là đi lạc."
 }

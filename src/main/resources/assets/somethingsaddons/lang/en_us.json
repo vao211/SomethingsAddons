@@ -139,5 +139,13 @@
   "somethingsaddons.midnightconfig.campfireHealInterval": "Healing Interval (s)",
   "somethingsaddons.midnightconfig.campfireHealInterval.tooltip": "Time between each heal pulse.",
   "somethingsaddons.midnightconfig.campfireHealAmount": "Heal Amount per Pulse",
-  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Amount of HP restored (1.0 = half heart)."
+  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Amount of HP restored (1.0 = half heart).",
+
+  "somethingsaddons.midnightconfig.category.pet": "Pet Settings",
+  "somethingsaddons.midnightconfig.enablePetReturnToSpawn": "Pets Return to Spawn",
+  "somethingsaddons.midnightconfig.enablePetReturnToSpawn.tooltip": "If a tamed pet is lost (owner too far away) for a certain time, it will automatically teleport to the owner's bed or world spawn. Standing (not sitting) pets only.",
+  "somethingsaddons.midnightconfig.petReturnLostTimer": "Lost Timer (Seconds)",
+  "somethingsaddons.midnightconfig.petReturnLostTimer.tooltip": "How long a pet must be lost before teleporting (Default: 120s).",
+  "somethingsaddons.midnightconfig.petLostRadius": "Lost Radius (Blocks)",
+  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Distance from the owner to be considered 'lost'."
 }

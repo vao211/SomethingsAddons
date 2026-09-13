@@ -12,6 +12,7 @@
     "ItemEntityMixin",
     "LivingEntityMixin",
     "MoonknightMixin",
+    "PetTeleportMixin",
     "PlayerCampfireMixin",
     "WardenBuffMixin",
     "WitherEntityMixin",
