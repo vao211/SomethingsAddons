@@ -6,16 +6,17 @@
   "mixins": [
     "AnvilMenuMixin",
     "DamageAndHealingMixin",
+    "DropLimitMixin",
     "EnderDragonEntityMixin",
     "InfuserMenuMixin",
     "ItemEntityMixin",
     "LivingEntityMixin",
     "MoonknightMixin",
+    "PlayerCampfireMixin",
+    "WardenBuffMixin",
     "WitherEntityMixin",
     "WitherSkullEntityMixin",
-    "WorldMixin",
-    "WardenBuffMixin",
-    "DropLimitMixin"
+    "WorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

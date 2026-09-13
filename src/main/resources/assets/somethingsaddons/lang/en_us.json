@@ -128,5 +128,15 @@
   "somethingsaddons.midnightconfig.wardenBuffTimeThreshold.tooltip": "Time required between each buff stage. The very first buff always triggers 5 seconds after spawning.",
 
   "somethingsaddons.midnightconfig.limitWardenDropsPerDay": "Limit Warden Drops (1/Day)",
-  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "If enabled, only the first Warden killed per Minecraft day (24000 ticks) will drop items. Prevents infinite farming."
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "If enabled, only the first Warden killed per Minecraft day (24000 ticks) will drop items. Prevents infinite farming.",
+
+  "somethingsaddons.midnightconfig.category.survival": "Survival",
+  "somethingsaddons.midnightconfig.enableCampfireHealing": "Campfire Healing (Bonfire)",
+  "somethingsaddons.midnightconfig.enableCampfireHealing.tooltip": "If enabled, lit campfires will slowly heal nearby players who are out of combat.",
+  "somethingsaddons.midnightconfig.campfireCombatCooldown": "Out of Combat Timer (s)",
+  "somethingsaddons.midnightconfig.campfireCombatCooldown.tooltip": "Seconds after taking or dealing damage before campfire healing activates.",
+  "somethingsaddons.midnightconfig.campfireHealInterval": "Healing Interval (s)",
+  "somethingsaddons.midnightconfig.campfireHealInterval.tooltip": "Time between each heal pulse.",
+  "somethingsaddons.midnightconfig.campfireHealAmount": "Heal Amount per Pulse",
+  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Amount of HP restored (1.0 = half heart)."
 }

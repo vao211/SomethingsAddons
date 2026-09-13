@@ -110,4 +110,17 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     public static boolean enableAntiHealDebuff = true;
     @Entry(category = "config_dmg_and_healing")
     public static boolean enableMinDmgScalingWithBossHp = true;
+
+    //Survival Feat
+    @Entry(category = "survival")
+    public static boolean enableCampfireHealing = true;
+
+    @Entry(category = "survival", min = 1)
+    public static int campfireCombatCooldown = 5;
+
+    @Entry(category = "survival", min = 1)
+    public static int campfireHealInterval = 3;
+
+    @Entry(category = "survival", min = 0.5)
+    public static double campfireHealAmount = 1.0D;
 }

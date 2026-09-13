@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import vao211.somethingsaddons.Somethingsaddons;
 import vao211.somethingsaddons.config.SomethingsAddonsConfig;
 
 @Mixin(LivingEntity.class)
@@ -60,7 +61,7 @@ public abstract class DamageAndHealingMixin {
         }
         //-----
 
-        float damageAfterVanilla = cir.getReturnValue();
+        float finalDamage = cir.getReturnValue();
 
         boolean isArmorBypassing = source.isIn(DamageTypeTags.BYPASSES_ARMOR);
         boolean isValidBossOrMagicAttack =
@@ -87,10 +88,24 @@ public abstract class DamageAndHealingMixin {
                 minDamage = (float) SomethingsAddonsConfig.minDmgTakenForMob;
             }
 
-            if (minDamage > 0.0f && damageAfterVanilla < minDamage) {
-                cir.setReturnValue(minDamage);
+            if (minDamage > 0.0f && finalDamage < minDamage) {
+                finalDamage = minDamage;
             }
         }
+
+        // CAMPFIRE combat countdơn
+        if (finalDamage > 0.0f) {
+            int cooldownTicks = SomethingsAddonsConfig.campfireCombatCooldown * 20;
+
+            if (entity instanceof PlayerEntity player) {
+                Somethingsaddons.PLAYER_COMBAT_TIMERS.put(player, cooldownTicks);
+            }
+            if (attacker instanceof PlayerEntity playerAttacker) {
+                Somethingsaddons.PLAYER_COMBAT_TIMERS.put(playerAttacker, cooldownTicks);
+            }
+        }
+
+        cir.setReturnValue(finalDamage);
     }
 
     //MAX HEALING

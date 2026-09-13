@@ -127,5 +127,15 @@
   "somethingsaddons.midnightconfig.wardenBuffTimeThreshold.tooltip": "Thời gian chờ giữa các lần cường hóa. Lần buff đầu tiên luôn kích hoạt sau khi được triệu hồi 5 giây.",
 
   "somethingsaddons.midnightconfig.limitWardenDropsPerDay": "Giới hạn Rớt Đồ (1 con/Ngày)",
-  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "Nếu bật, chỉ con Warden đầu tiên bị giết trong 1 ngày Minecraft (24000 ticks) mới rớt đồ. Ngăn chặn các cỗ máy Farm Warden vô hạn."
+  "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "Nếu bật, chỉ con Warden đầu tiên bị giết trong 1 ngày Minecraft (24000 ticks) mới rớt đồ. Ngăn chặn các cỗ máy Farm Warden vô hạn.",
+
+  "somethingsaddons.midnightconfig.category.survival": "Sinh Tồn",
+  "somethingsaddons.midnightconfig.enableCampfireHealing": "Lửa Trại Hồi Máu",
+  "somethingsaddons.midnightconfig.enableCampfireHealing.tooltip": "Lửa trại đang cháy sẽ từ từ hồi máu cho người chơi xung quanh nếu họ không trong giao tranh.",
+  "somethingsaddons.midnightconfig.campfireCombatCooldown": "Thời Gian Thoát Giao Tranh (s)",
+  "somethingsaddons.midnightconfig.campfireCombatCooldown.tooltip": "Số giây sau khi gây/nhận sát thương để bắt đầu được hồi máu.",
+  "somethingsaddons.midnightconfig.campfireHealInterval": "Chu Kỳ Hồi Phục (s)",
+  "somethingsaddons.midnightconfig.campfireHealInterval.tooltip": "Thời gian giữa mỗi nhịp hồi máu.",
+  "somethingsaddons.midnightconfig.campfireHealAmount": "Lượng Máu Mỗi Nhịp",
+  "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Lượng HP được hồi mỗi nhịp (1.0 = nửa tim)."
 }

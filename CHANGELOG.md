@@ -7,4 +7,5 @@
     * **Dynamic Min Damage Scaling:** The minimum damage taken by the player dynamically scales up (up to 5x) if the attacker is an elite mob or boss with 100+ Max HP.
     * **Boss Anti-Heal Debuff:** Taking damage from mobs with 100+ Max HP applies a debuff that reduces all healing and absorption gained by 50% for 5 seconds. Includes an Action Bar warning.
     * **Max Healing Cap:** Set a hard limit on how much HP can be recovered in a single healing instance (prevents excessive healing from other mods).
-    * Added full toggle options in the Config Menu for every individual mechanic.
+    * **Added full toggle options in the Config Menu for every individual mechanic.**
+    * 
