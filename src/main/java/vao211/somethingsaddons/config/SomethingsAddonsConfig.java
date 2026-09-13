@@ -85,7 +85,10 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     //Warden
     @Entry(category = "warden")
     public static boolean enableWardenBuff = true;
-
+    @Entry(category = "warden", min = 1.0)
+    public static double wardenBaseHealth = 800.0D;
+    @Entry(category = "warden", min = 0.0)
+    public static double wardenBaseArmor = 10.0D;
     @Entry(category = "warden", min = 1)
     public static int wardenMaxBuffTimes = 3;
 
@@ -123,4 +126,12 @@ public class SomethingsAddonsConfig extends MidnightConfig {
 
     @Entry(category = "survival", min = 0.5)
     public static double campfireHealAmount = 1.0D;
+
+    //Pet
+    @Entry(category = "pet")
+    public static boolean enablePetReturnToSpawn = true;
+    @Entry(category = "pet", min = 10)
+    public static int petReturnLostTimer = 120; //second
+    @Entry(category = "pet", min = 10)
+    public static int petLostRadius = 100;
 }

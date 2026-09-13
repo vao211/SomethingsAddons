@@ -129,6 +129,11 @@
   "somethingsaddons.midnightconfig.limitWardenDropsPerDay": "Giới hạn Rớt Đồ (1 con/Ngày)",
   "somethingsaddons.midnightconfig.limitWardenDropsPerDay.tooltip": "Nếu bật, chỉ con Warden đầu tiên bị giết trong 1 ngày Minecraft (24000 ticks) mới rớt đồ. Ngăn chặn các cỗ máy Farm Warden vô hạn.",
 
+  "somethingsaddons.midnightconfig.wardenBaseHealth": "Máu Tối Đa Của Warden",
+  "somethingsaddons.midnightconfig.wardenBaseHealth.tooltip": "Lượng máu gốc của Warden (Vanilla là 500). Chỉ hoạt động nếu Bật Cường Hóa Warden.",
+  "somethingsaddons.midnightconfig.wardenBaseArmor": "Giáp Gốc Của Warden",
+  "somethingsaddons.midnightconfig.wardenBaseArmor.tooltip": "Lượng giáp khởi điểm của Warden (Vanilla là 0). Chỉ hoạt động nếu Bật Cường Hóa Warden.",
+
   "somethingsaddons.midnightconfig.category.survival": "Sinh Tồn",
   "somethingsaddons.midnightconfig.enableCampfireHealing": "Lửa Trại Hồi Máu",
   "somethingsaddons.midnightconfig.enableCampfireHealing.tooltip": "Lửa trại đang cháy sẽ từ từ hồi máu cho người chơi xung quanh nếu họ không trong giao tranh.",

@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.WardenEntity;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -25,6 +26,7 @@ import java.util.List;
 
 @Mixin(WardenEntity.class)
 public abstract class WardenBuffMixin {
+    @Unique private boolean somethingsaddons$statsInitialized = false;
     @Unique private int somethingsaddons$aliveTicks = 0;
     @Unique private int somethingsaddons$buffTimer = 0;
     @Unique private int somethingsaddons$buffCount = 0;
@@ -37,13 +39,26 @@ public abstract class WardenBuffMixin {
         WardenEntity warden = (WardenEntity) (Object) this;
 
         if (warden.getWorld().isClient() || warden.isDead() || !SomethingsAddonsConfig.enableWardenBuff) return;
+        if (!this.somethingsaddons$statsInitialized) {
+            EntityAttributeInstance maxHealthAttr = warden.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
+            if (maxHealthAttr != null && maxHealthAttr.getBaseValue() != SomethingsAddonsConfig.wardenBaseHealth) {
+                float currentHealth = warden.getHealth();
+                double oldMax = maxHealthAttr.getBaseValue();
+                maxHealthAttr.setBaseValue(SomethingsAddonsConfig.wardenBaseHealth);
+                warden.setHealth(currentHealth * (float) (SomethingsAddonsConfig.wardenBaseHealth / oldMax));
+            }
+            EntityAttributeInstance armorAttr = warden.getAttributeInstance(EntityAttributes.GENERIC_ARMOR);
+            if (armorAttr != null && armorAttr.getBaseValue() != SomethingsAddonsConfig.wardenBaseArmor) {
+                armorAttr.setBaseValue(SomethingsAddonsConfig.wardenBaseArmor);
+            }
+
+            this.somethingsaddons$statsInitialized = true;
+        }
 
         this.somethingsaddons$aliveTicks++;
-
         if (this.somethingsaddons$aliveTicks <= 100) {
             return;
         }
-
         if (this.somethingsaddons$buffCount < SomethingsAddonsConfig.wardenMaxBuffTimes) {
             this.somethingsaddons$buffTimer++;
 
@@ -60,7 +75,8 @@ public abstract class WardenBuffMixin {
     private void somethingsaddons$applyWardenBuff(WardenEntity warden) {
         this.somethingsaddons$buffCount++;
 
-        warden.heal(warden.getMaxHealth() * 0.2f);
+        float healAmount = warden.getMaxHealth() * 0.2f;
+        warden.setHealth(Math.min(warden.getMaxHealth(), warden.getHealth() + healAmount));
 
         somethingsaddons$addPersistentModifier(warden, EntityAttributes.GENERIC_ARMOR, WARDEN_ARMOR_BUFF, 3.0 * this.somethingsaddons$buffCount);
         somethingsaddons$addPersistentModifier(warden, EntityAttributes.GENERIC_ATTACK_DAMAGE, WARDEN_DMG_BUFF, 2.0 * this.somethingsaddons$buffCount);
@@ -73,13 +89,16 @@ public abstract class WardenBuffMixin {
         world.spawnParticles(ParticleTypes.SONIC_BOOM, warden.getX(), warden.getBodyY(0.5), warden.getZ(), 1, 0, 0, 0, 0);
         world.playSound(null, warden.getBlockPos(), SoundEvents.ENTITY_WARDEN_AGITATED, SoundCategory.HOSTILE, 2.0f, 0.8f);
 
-        Box aoeBox = warden.getBoundingBox().expand(3.0D);
+        Box aoeBox = warden.getBoundingBox().expand(8.0D);
         List<LivingEntity> targets = world.getEntitiesByClass(LivingEntity.class, aoeBox, e -> e != warden && e.isAlive());
 
         for (LivingEntity target : targets) {
-            double dx = target.getX() - warden.getX();
-            double dz = target.getZ() - warden.getZ();
-            target.takeKnockback(3, -dx, -dz);
+            double dx = warden.getX() - target.getX();
+            double dz = warden.getZ() - target.getZ();
+            target.takeKnockback(2.0, dx, dz);
+            if (target instanceof ServerPlayerEntity serverPlayer) {
+                serverPlayer.networkHandler.sendPacket(new net.minecraft.network.packet.s2c.play.EntityVelocityUpdateS2CPacket(serverPlayer));
+            }
 
             target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 3));
         }
