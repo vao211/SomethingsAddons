@@ -116,6 +116,8 @@ public class SomethingsAddonsConfig extends MidnightConfig {
 
     //Survival Feat
     @Entry(category = "survival")
+    public static boolean enableOvereating = true;
+    @Entry(category = "survival")
     public static boolean enableCampfireHealing = true;
 
     @Entry(category = "survival", min = 1)
@@ -126,6 +128,12 @@ public class SomethingsAddonsConfig extends MidnightConfig {
 
     @Entry(category = "survival", min = 0.5)
     public static double campfireHealAmount = 1.0D;
+
+    @Entry(category = "survival")
+    public static boolean enableArmorWeight = true;
+    @Entry(category = "survival")
+    public static boolean enableSprainedAnkle = true;
+
 
     //Pet
     @Entry(category = "pet")

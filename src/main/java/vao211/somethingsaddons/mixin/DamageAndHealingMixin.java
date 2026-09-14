@@ -4,6 +4,8 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageTypes;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.text.Text;
@@ -102,6 +104,13 @@ public abstract class DamageAndHealingMixin {
             }
             if (attacker instanceof PlayerEntity playerAttacker) {
                 Somethingsaddons.PLAYER_COMBAT_TIMERS.put(playerAttacker, cooldownTicks);
+            }
+        }
+        // SPRAINED ANKLE
+        if (SomethingsAddonsConfig.enableSprainedAnkle && finalDamage > 8.0f) {
+            if (source.isOf(DamageTypes.FALL) && entity instanceof PlayerEntity player) {
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 100, 3));
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 100, 5));
             }
         }
 

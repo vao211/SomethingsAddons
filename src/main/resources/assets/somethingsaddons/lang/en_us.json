@@ -116,9 +116,9 @@
   "somethingsaddons.midnightconfig.witherSkullExplosionPower": "Wither Skull: Explosion Power",
   "somethingsaddons.midnightconfig.witherSkullExplosionPower.tooltip": "Radius and damage scale of the Wither Skull explosion (Vanilla is 1.0).",
 
-  "somethingsaddons.midnightconfig.category.warden": "Warden Settings",
+  "somethingsaddons.midnightconfig.category.warden": "Warden",
 
-  "somethingsaddons.midnightconfig.enableWardenBuff": "Enable Warden Enrage",
+  "somethingsaddons.midnightconfig.enableWardenBuff": "Enable Warden Danger Boss",
   "somethingsaddons.midnightconfig.enableWardenBuff.tooltip": "If enabled, the Warden will progressively buff itself over time, gaining size, armor, damage, and emitting AoE knockback.",
   "somethingsaddons.midnightconfig.wardenMaxBuffTimes": "Max Buff Stacks",
   "somethingsaddons.midnightconfig.wardenMaxBuffTimes.tooltip": "The maximum number of times the Warden can enrage/buff itself (Default: 3).",
@@ -141,11 +141,19 @@
   "somethingsaddons.midnightconfig.campfireHealAmount": "Heal Amount per Pulse",
   "somethingsaddons.midnightconfig.campfireHealAmount.tooltip": "Amount of HP restored (1.0 = half heart).",
 
-  "somethingsaddons.midnightconfig.category.pet": "Pet Settings",
+  "somethingsaddons.midnightconfig.category.pet": "Pet",
   "somethingsaddons.midnightconfig.enablePetReturnToSpawn": "Pets Return to Spawn",
   "somethingsaddons.midnightconfig.enablePetReturnToSpawn.tooltip": "If a tamed pet is lost (owner too far away) for a certain time, it will automatically teleport to the owner's bed or world spawn. Standing (not sitting) pets only.",
   "somethingsaddons.midnightconfig.petReturnLostTimer": "Lost Timer (Seconds)",
   "somethingsaddons.midnightconfig.petReturnLostTimer.tooltip": "How long a pet must be lost before teleporting (Default: 120s).",
   "somethingsaddons.midnightconfig.petLostRadius": "Lost Radius (Blocks)",
-  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Distance from the owner to be considered 'lost'."
+  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Distance from the owner to be considered 'lost'.",
+
+  "somethingsaddons.midnightconfig.enableArmorWeight": "Armor Weight Penalty",
+  "somethingsaddons.midnightconfig.enableArmorWeight.tooltip": "Armor above 20 points slows you down by 2% per point (Max 20%), but also increases knockback resistance by the same amount.",
+  "somethingsaddons.midnightconfig.enableSprainedAnkle": "Sprained Ankle (Fall Damage)",
+  "somethingsaddons.midnightconfig.enableSprainedAnkle.tooltip": "Taking more than 4 hearts of fall damage will heavily slow and disorient you for 5 seconds.",
+
+  "somethingsaddons.midnightconfig.enableOvereating": "Overeating (Gain Saturation)",
+  "somethingsaddons.midnightconfig.enableOvereating.tooltip": "Allows players to eat food even when their hunger bar is full, building up hidden saturation. Prevents eating if saturation is already maxed out."
 }

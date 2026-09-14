@@ -150,5 +150,13 @@
   "somethingsaddons.midnightconfig.petReturnLostTimer": "Thời Gian Đi Lạc (Giây)",
   "somethingsaddons.midnightconfig.petReturnLostTimer.tooltip": "Thời gian thú cưng phải chờ khi bị lạc trước khi tự dịch chuyển (Mặc định: 120s).",
   "somethingsaddons.midnightconfig.petLostRadius": "Bán Kính Đi Lạc (Block)",
-  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Khoảng cách tối đa so với chủ trước khi bị tính là đi lạc."
+  "somethingsaddons.midnightconfig.petLostRadius.tooltip": "Khoảng cách tối đa so với chủ trước khi bị tính là đi lạc.",
+
+  "somethingsaddons.midnightconfig.enableArmorWeight": "Trọng Lượng Giáp",
+  "somethingsaddons.midnightconfig.enableArmorWeight.tooltip": "Từ 20 giáp trở lên, mỗi 1 giáp dư sẽ làm giảm 2% tốc chạy nhưng bù lại 2% kháng đẩy lùi (Tối đa 20%).",
+  "somethingsaddons.midnightconfig.enableSprainedAnkle": "Chấn Thương Chân",
+  "somethingsaddons.midnightconfig.enableSprainedAnkle.tooltip": "Ngã mất quá 4 tim sẽ làm bạn bị Chóng mặt và Chậm chạp nặng trong 5 giây.",
+
+  "somethingsaddons.midnightconfig.enableOvereating": "Ăn Cố (Lấy Độ Bão Hòa)",
+  "somethingsaddons.midnightconfig.enableOvereating.tooltip": "Cho phép người chơi tiếp tục ăn dù đã đầy thanh đói để tích lũy thanh Bão hòa (Saturation). Tự động chặn nếu thanh bão hòa đã đầy để tránh lãng phí thức ăn."
 }

@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "AnvilMenuMixin",
+    "ArmorWeightMixin",
     "DamageAndHealingMixin",
     "DropLimitMixin",
     "EnderDragonEntityMixin",
@@ -14,6 +15,7 @@
     "MoonknightMixin",
     "PetTeleportMixin",
     "PlayerCampfireMixin",
+    "PlayerOvereatMixin",
     "WardenBuffMixin",
     "WitherEntityMixin",
     "WitherSkullEntityMixin",
