@@ -1,4 +1,6 @@
-﻿## [Current Version] - 2026-09-14
+﻿## [Current Version] 2026-11-9
+* **Pet Healing Campfire:** Pet now can heal as player
+## 2026-09-14
 ### Added
 * **Damage & Healing Control System:** Completely fixes the late-game "Godmode" issue caused by armor stacking or Resistance 255. All valid attacks will now deal a guaranteed minimum amount of damage (configurable).
 * **Boss & Magic Whitelist:** Min Damage works flawlessly against armor-bypassing boss skills like Dragon Breath, Wither, Witch's Magic, and Warden's Sonic Boom.

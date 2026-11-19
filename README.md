@@ -12,8 +12,11 @@ A Minecraft Fabric mod adding various enhancements, brutal RPG mechanics, and ut
 - **Wither DangerBoss Mode:** Introduces a special configurable DangerBoss mode for the Wither.
 - **Ender Dragon DangerBoss Mode:** Enhanced health, armor, and custom fireball attack mechanics.
 - **Warden Overhaul:** The Warden now progressively enrages during combat, increasing in size and stats, while blasting players away with AoE Sonic Booms. Loot is strictly limited to 1 kill per in-game day.
-- **Campfire Safezone (Bonfire):** Lit campfires act as healing stations, slowly restoring health to nearby players who are safely out of combat.
-- **RPG Survival Mechanics:** Introduces immersive physical mechanics including **Armor Weight** (heavy armor slows you down but increases knockback resistance), **Sprained Ankles** (severe fall damage causes temporary disorientation), and **Overeating** (eat past full hunger to store saturation).
+- **Campfire Safezone (Bonfire):** Lit campfires act as healing stations, slowly restoring health to nearby players and pet who are safely out of combat.
+- **RPG Survival Mechanics:** Introduces immersive physical mechanics including
+- **Armor Weight** (heavy armor slows you down but increases knockback resistance)
+- **Sprained Ankles** (severe fall damage causes temporary disorientation)
+- **Overeating** (eat past full hunger to store saturation)
 - **Pet Recall:** Never lose a dog again! Pets left too far behind (100+ blocks) will automatically teleport back to your bed or world spawn after 2 minutes (ignores sitting pets).
 - **Block Protection:** Configurable protection to prevent blocks from being destroyed.
 - **Enchantment Limiter:** Limit the maximum number of enchantments allowed per item.

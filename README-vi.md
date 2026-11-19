@@ -11,8 +11,11 @@ Một bản mod dành cho Minecraft Fabric nhằm bổ sung các cơ chế sinh 
 * **Hiệu ứng Khắc chế (Anti-Heal Debuff):** Ăn đòn từ Boss sẽ khiến bạn bị giảm 50% toàn bộ khả năng hồi máu trong 5 giây. Chấm dứt kỷ nguyên spam Táo Vàng để cò quay với Boss!
 * **DangerBoss (Wither & Rồng Ender):** Chế độ thử thách đặc biệt giúp tăng cường chỉ số (Máu, Giáp), sát thương và thêm các chiêu thức tấn công độc nhất.
 * **Warden Overhaul:** Trùm cuối giờ đây có cơ chế Cường hóa (Enrage) liên tục phình to kích thước, tăng chỉ số và nổ Sonic Boom đẩy lùi diện rộng mỗi 30 giây. Vật phẩm rơi ra bị giới hạn chặt chẽ 1 con/ngày Minecraft.
-* **Lửa Trại Hồi Máu (Bonfire):** Biến Lửa trại thành các trạm hồi phục tĩnh. Tự động hồi máu cho người chơi đứng gần nếu họ đã an toàn thoát khỏi giao tranh.
-* **Cơ Chế Sinh Tồn RPG:** Mang đến trải nghiệm nhập vai chân thực với **Trọng Lượng Giáp** (giáp quá 20 điểm sẽ làm giảm tốc chạy nhưng bù lại tăng kháng đẩy lùi), **Chấn Thương Chân** (ngã mất quá 4 tim sẽ bị chóng mặt, chậm chạp nặng) và **Ăn Cố** (cho phép tiếp tục ăn dù đầy thanh đói để tích lũy độ bão hòa ẩn).
+* **Lửa Trại Hồi Máu (Bonfire):** Biến Lửa trại thành các trạm hồi phục tĩnh. Tự động hồi máu cho người chơi và pet đứng gần nếu họ đã an toàn thoát khỏi giao tranh.
+* **Cơ Chế Sinh Tồn RPG:** Mang đến trải nghiệm nhập vai chân thực
+* **Trọng Lượng Giáp** (giáp quá 20 điểm sẽ làm giảm tốc chạy nhưng bù lại tăng kháng đẩy lùi),
+* **Chấn Thương Chân** (ngã mất quá 4 tim sẽ bị chóng mặt, chậm chạp nặng) và 
+* **Ăn Cố** (cho phép tiếp tục ăn dù đầy thanh đói để tích lũy độ bão hòa ẩn)
 * **Thú Cưng Tự Về Nhà:** Chó/Mèo đi lạc (cách xa hơn 100 block) sẽ tự động dịch chuyển về giường của chủ sau 2 phút (Không áp dụng khi thú cưng đang ngồi).
 * **Giới hạn Phù phép (Enchantment Limiter):** Ngăn chặn việc "nhồi nhét" quá nhiều bùa chú lên một trang bị.
 * **Bảo vệ Khối:** Thêm tính năng bảo vệ block khỏi bị phá hủy bởi quái vật.
