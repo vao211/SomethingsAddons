@@ -119,7 +119,8 @@ public class SomethingsAddonsConfig extends MidnightConfig {
     public static boolean enableOvereating = true;
     @Entry(category = "survival")
     public static boolean enableCampfireHealing = true;
-
+    @Entry(category = "survival")
+    public static boolean enableCampFireHealingPet = true;
     @Entry(category = "survival", min = 1)
     public static int campfireCombatCooldown = 5;
 

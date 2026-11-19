@@ -6,6 +6,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.text.Text;
@@ -100,10 +101,17 @@ public abstract class DamageAndHealingMixin {
             int cooldownTicks = SomethingsAddonsConfig.campfireCombatCooldown * 20;
 
             if (entity instanceof PlayerEntity player) {
-                Somethingsaddons.PLAYER_COMBAT_TIMERS.put(player, cooldownTicks);
+                Somethingsaddons.COMBAT_TIMERS.put(player, cooldownTicks);
             }
+            else if (entity instanceof TameableEntity tameable && tameable.isTamed()) {
+                Somethingsaddons.COMBAT_TIMERS.put(entity, cooldownTicks);
+            }
+
             if (attacker instanceof PlayerEntity playerAttacker) {
-                Somethingsaddons.PLAYER_COMBAT_TIMERS.put(playerAttacker, cooldownTicks);
+                Somethingsaddons.COMBAT_TIMERS.put(playerAttacker, cooldownTicks);
+            }
+            else if (attacker instanceof TameableEntity tameableAttacker && tameableAttacker.isTamed()) {
+                Somethingsaddons.COMBAT_TIMERS.put((LivingEntity) attacker, cooldownTicks);
             }
         }
         // SPRAINED ANKLE

@@ -35,18 +35,17 @@ public abstract class PlayerCampfireMixin extends LivingEntity {
 
         if (world.isClient() || !player.isAlive() || player.isSpectator()) return;
 
-        int combatTimer = Somethingsaddons.PLAYER_COMBAT_TIMERS.getOrDefault(player, 0);
+        int combatTimer = Somethingsaddons.COMBAT_TIMERS.getOrDefault(player, 0);
         if (combatTimer > 0) {
             combatTimer--;
             if (combatTimer <= 0) {
-                Somethingsaddons.PLAYER_COMBAT_TIMERS.remove(player);
+                Somethingsaddons.COMBAT_TIMERS.remove(player);
             } else {
-                Somethingsaddons.PLAYER_COMBAT_TIMERS.put(player, combatTimer);
+                Somethingsaddons.COMBAT_TIMERS.put(player, combatTimer);
             }
         }
 
         if (!SomethingsAddonsConfig.enableCampfireHealing) return;
-
 
         if (combatTimer > 0 || player.getHealth() >= player.getMaxHealth()) {
             this.somethingsaddons$campfireHealTimer = 0;
